@@ -28,8 +28,8 @@ const post = {
         <Link to="/Blog-Post-React-App/">Main</Link>{' '}
         <Link to="/Blog-Post-React-App/home">Home</Link>{' '}
         <Link to="/Blog-Post-React-App/favoritFood">Favorite Food</Link>{' '}
-        <Link to="/favoriteMovie">Favorite Movie</Link>{' '}
-        <Link to="/about">About</Link>
+        <Link to="/Blog-Post-React-App/favoriteMovie">Favorite Movie</Link>{' '}
+        <Link to="/Blog-Post-React-App/about">About</Link>
       </nav>
 
       <div>
@@ -43,8 +43,8 @@ const post = {
          )}/>
         <Route path="/Blog-Post-React-App/home" component={Home} />
         <Route path="/Blog-Post-React-App/favoritFood" component={FavoriteFood} />
-        <Route path="/favoriteMovie" component={FavoriteMovie} />
-        <Route path="/about" component={About} />
+        <Route path="/Blog-Post-React-App/favoriteMovie" component={FavoriteMovie} />
+        <Route path="/Blog-Post-React-App/about" component={About} />
 
       </div>
     </Router>
