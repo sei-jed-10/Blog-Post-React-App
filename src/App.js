@@ -33,7 +33,7 @@ const post = {
       </nav>
 
       <div>
-        <Route exact path="/" render={
+        <Route exact path="/Blog-Post-React-App/" render={
                 (props) => (<Main
                           {...props}
                           title={post.title}
