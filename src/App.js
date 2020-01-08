@@ -22,18 +22,24 @@ const post = {
   body: "Check out this body property!",
   comments: ["First!", "Great post", "Hire this author now!"]
 }
+
+//For Deployment on Github only
+var prePath = "/Blog-Post-React-App";
+
+//For Local version
+//var prePath = "";
     return(
       <Router>
        <nav>
-        <Link to="/Blog-Post-React-App/">Main</Link>{' '}
-        <Link to="/Blog-Post-React-App/home">Home</Link>{' '}
-        <Link to="/Blog-Post-React-App/favoritFood">Favorite Food</Link>{' '}
-        <Link to="/Blog-Post-React-App/favoriteMovie">Favorite Movie</Link>{' '}
-        <Link to="/Blog-Post-React-App/about">About</Link>
+        <Link to={prePath + "/"}>Main</Link>{' '}
+        <Link to={prePath + "/home"}>Home</Link>{' '}
+        <Link to={prePath + "/favoritFood"}>Favorite Food</Link>{' '}
+        <Link to={prePath + "/favoriteMovie"}>Favorite Movie</Link>{' '}
+        <Link to={prePath + "/about"}>About</Link>
       </nav>
 
       <div>
-        <Route exact path="/Blog-Post-React-App/" render={
+        <Route exact path={prePath + "/"} render={
                 (props) => (<Main
                           {...props}
                           title={post.title}
@@ -41,10 +47,10 @@ const post = {
                           body={post.body}
                           comments={post.comments} />
          )}/>
-        <Route path="/Blog-Post-React-App/home" component={Home} />
-        <Route path="/Blog-Post-React-App/favoritFood" component={FavoriteFood} />
-        <Route path="/Blog-Post-React-App/favoriteMovie" component={FavoriteMovie} />
-        <Route path="/Blog-Post-React-App/about" component={About} />
+        <Route path={prePath + "/home"} component={Home} />
+        <Route path={prePath + "/favoritFood"} component={FavoriteFood} />
+        <Route path={prePath + "/favoriteMovie"} component={FavoriteMovie} />
+        <Route path={prePath + "/about"} component={About} />
 
       </div>
     </Router>
