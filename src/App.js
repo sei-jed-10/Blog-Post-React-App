@@ -25,9 +25,9 @@ const post = {
     return(
       <Router>
        <nav>
-        <Link to="/Blog-Post-React-App/">Main</Link>{' '}
-        <Link to="/Blog-Post-React-App/home">Home</Link>{' '}
-        <Link to="/Blog-Post-React-App/favoritFood">Favorite Food</Link>{' '}
+        <Link to="/">Main</Link>{' '}
+        <Link to="/home">Home</Link>{' '}
+        <Link to="/favoritFood">Favorite Food</Link>{' '}
         <Link to="/favoriteMovie">Favorite Movie</Link>{' '}
         <Link to="/about">About</Link>
       </nav>
