@@ -25,9 +25,9 @@ const post = {
     return(
       <Router>
        <nav>
-        <Link to="/">Main</Link>{' '}
-        <Link to="/home">Home</Link>{' '}
-        <Link to="/favoritFood">Favorite Food</Link>{' '}
+        <Link to="/Blog-Post-React-App/">Main</Link>{' '}
+        <Link to="/Blog-Post-React-App/home">Home</Link>{' '}
+        <Link to="/Blog-Post-React-App/favoritFood">Favorite Food</Link>{' '}
         <Link to="/favoriteMovie">Favorite Movie</Link>{' '}
         <Link to="/about">About</Link>
       </nav>
@@ -41,8 +41,8 @@ const post = {
                           body={post.body}
                           comments={post.comments} />
          )}/>
-        <Route path="/home" component={Home} />
-        <Route path="/favoritFood" component={FavoriteFood} />
+        <Route path="/Blog-Post-React-App/home" component={Home} />
+        <Route path="/Blog-Post-React-App/favoritFood" component={FavoriteFood} />
         <Route path="/favoriteMovie" component={FavoriteMovie} />
         <Route path="/about" component={About} />
 
